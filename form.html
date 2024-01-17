@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      fieldset {
+        margin-bottom: 20px;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="">Home</a> </li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li>
+          <a href="blog.html">Blog</a>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li>Blog</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <form>
+    <label for="name"
+      >Your Name <input id="name" type="text" placeholder="Input Your Name"
+    /></label>
+    <label for="email"
+      >Your Email
+      <input id="email" type="email" placeholder="Input Your Email"
+    /></label>
+    <label for="phone"
+      >Your Mobile
+      <input id="phone" type="number" placeholder="Input Your Phone Number"
+    /></label>
+    <fieldset>
+      <legend>Pick One Pitha</legend>
+      <label for="chitoy"
+        ><input type="radio" name="pitha" id="chitoy" />Chitoy</label
+      >
+      <label for="Vapa"
+        ><input type="radio" name="pitha" id="vapa" />
+        Vapa
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Pick One Vhorta</legend>
+      <label for="aluVhorta"
+        ><input type="checkbox" name="vhorta" id="aluVhorta" />Alu
+        Vhorta</label
+      >
+      <label for="soris"
+        ><input type="checkbox" name="vhorta" id="sorisa" />
+        Sorisa Vhorta
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Special Instruction</legend>
+      <textarea name="" id="" cols="60" rows="3"></textarea>
+    </fieldset>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
