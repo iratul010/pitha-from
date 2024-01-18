@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      const object1 = { id: 1, name: "Example 1" };
+      const object2 = { id: 2, name: "Example 2" };
+
+      const newArray = [object1, object2].map(obj => ({
+        ...obj,
+        id: obj.id === 1 ? 3 : obj.id,
+        name: `Modified ${obj.name}`,
+      }));
+
+      console.log(newArray);
+    </script>
   </head>
   <body>
     <header>
@@ -27,29 +39,58 @@
     </header>
     <h2>BLOG</h2>
     <h1>Click on a shape to see how it works:</h1>
-    <img src="/examples/images/shapes.png" alt="Geometrical Shapes" usemap="#shapes">
+    <img
+      src="/examples/images/shapes.png"
+      alt="Geometrical Shapes"
+      usemap="#shapes"
+    />
     <map name="shapes">
-        <area shape="circle" coords="40,40,40" href="/examples/html/circle.html" alt="Circle">
-    	<area shape="poly" coords="148,2,104,80,193,80" href="/examples/html/triangle.html" alt="Triangle">
-    	<area shape="rect" coords="226,2,323,80" href="/examples/html/rectangle.html" alt="Rectangle">
-    	<area shape="poly" coords="392,2,352,32,366,80,418,80,432,32" href="/examples/html/pentagon.html" alt="Pentagon">
+      <area
+        shape="circle"
+        coords="40,40,40"
+        href="/examples/html/circle.html"
+        alt="Circle"
+      />
+      <area
+        shape="poly"
+        coords="148,2,104,80,193,80"
+        href="/examples/html/triangle.html"
+        alt="Triangle"
+      />
+      <area
+        shape="rect"
+        coords="226,2,323,80"
+        href="/examples/html/rectangle.html"
+        alt="Rectangle"
+      />
+      <area
+        shape="poly"
+        coords="392,2,352,32,366,80,418,80,432,32"
+        href="/examples/html/pentagon.html"
+        alt="Pentagon"
+      />
     </map>
-    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <p>
+      The <abbr title="World Health Organization">WHO</abbr> was founded in
+      1948.
+    </p>
     <address>
-      Written by <a href="mailto:iratul010@gmail.com">Ratul</a>.<br> 
-      Visit us at:<br>
-      Example.com<br>
-      Box 564, Disneyland<br>
+      Written by <a href="mailto:iratul010@gmail.com">Ratul</a>.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
       USA
-      </address>
+    </address>
 
+    <h2><a href="https://www.javatpoint.com/html-tags">HTML5 TAGS</a></h2>
 
-      <h2> <a href="https://www.javatpoint.com/html-tags">HTML5 TAGS</a></h2>
-       
-      <input type="text" placeholder="ReadOnly" readonly>
-      <p title="lorem text here"> 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati mollitia ut eius veniam maxime rerum reprehenderit, iusto ipsa non veritatis eaque quibusdam ipsam nisi nam dolorem architecto officia pariatur omnis!
-      </p>
-      <input type="number" name="" id="" min="5" max="10">
+    <input type="text" placeholder="ReadOnly" readonly />
+    <p title="lorem text here">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+      mollitia ut eius veniam maxime rerum reprehenderit, iusto ipsa non
+      veritatis eaque quibusdam ipsam nisi nam dolorem architecto officia
+      pariatur omnis!
+    </p>
+    <input type="number" name="" id="" min="5" max="10" />
   </body>
 </html>
